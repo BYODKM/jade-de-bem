@@ -27,6 +27,11 @@ include jade-de-bem
 </div>
 ```
 
+## Installation
+
+- Download: [master.zip](https://github.com/internets-inc/jade-de-bem/archive/master.zip)
+- Via Bower: `$ bower install jade-de-bem`
+
 ## Specification
 
 Start with `+` sign and keep the className order.
