@@ -1,0 +1,16 @@
+{
+  "name": "jade-de-bem",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run jade",
+    "jade": "jade -p ./ ./test/index.jade -o ./test/ -P",
+    "watch": "chokidar ./**/*.jade -c 'npm run jade'"
+  },
+  "author": "Tomohiro Kasuga <tk@internets.co.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "chokidar-cli": "~1.1.0",
+    "jade": "~1.11.0"
+  }
+}

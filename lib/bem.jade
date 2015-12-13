@@ -1,0 +1,78 @@
+mixin bem(boo)
+
+  -
+    var config = {}
+    config.element  = '__'
+    config.modifier = '--'
+
+    function converted(str) {
+      arr = str.split('')
+      res = arr.join('\\')
+      res = '^' + res
+      return res
+    }
+
+    var elmExamStr = converted(config.element)
+    var modExamStr = converted(config.modifier)
+
+    var elmExam = new RegExp(elmExamStr)
+    var modExam = new RegExp(modExamStr)
+
+    var tag = attributes.tag ? attributes.tag : false
+    var cls = attributes.class ? attributes.class + '' : ''
+
+    attributes.tag = null
+    attributes.class = ''
+
+    bem = bem || []
+    var elm = ''
+    var mod = []
+    var els = []
+    var res = []
+    var str = ''
+
+    function hasLength(str) {
+      return (str.length)
+    }
+
+    var names = cls.split(' ')
+    names = names.filter(hasLength)
+
+    for (var i=0; i<names.length; i++)
+      if (elmExam.test(names[i]))
+        elm = names[i]
+      else if (modExam.test(names[i]))
+        mod.push(names[i])
+      else if (i === 0)
+        bem.push(names[i])
+      else
+        els.push(names[i])
+
+    if (boo === false)
+      bem.pop()
+
+    var len = bem.length - 1
+
+    if (elm.length)
+      res.push(bem[len] + elm)
+    else
+      res.push(bem[len])
+
+    for (var i=0; i<mod.length; i++)
+      if (elm.length)
+        res.push(bem[len] + elm + mod[i])
+      else
+        res.push(bem[len] + mod[i])
+
+    for (var i=0; i<els.length; i++)
+      res.push(els[i])
+
+    str = res.join(' ')
+    attributes.class = str
+
+  if (tag && boo !== false)
+    #{tag}&attributes(attributes)
+      block
+
+  if (boo === true)
+    block

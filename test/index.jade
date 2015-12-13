@@ -1,0 +1,19 @@
+include ../jade-de-bem
+
++div(class="page")
+  +header(class="__header")
+  +main(class="__main")
+    +div(class="block --special")
+      +ul(class="__items div")
+        +li(class="__item --new div")
+          +a(class="__link span")
+            | foo
+    +bem(false)
+  +footer(class="__footer")
+    +div(class="scope")
+      +ul(class="__items")
+        +li(class="__item")
+          +a(class="__link")
+            | bar
+    +bem(false)
+    +p(class="__copyright")

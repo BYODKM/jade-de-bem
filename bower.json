@@ -1,0 +1,23 @@
+{
+  "name": "jade-de-bem",
+  "description": "Mixins for the Rapid BEM Coding with Jade",
+  "main": [
+    "jade-de-bem.jade",
+    "lib/bem.jade",
+    "lib/index.jade"
+  ],
+  "ignore": [
+    "node_modules",
+    "test",
+    ".editorconfig",
+    ".gitignore",
+    "package.json"
+  ],
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/internets-inc/jade-de-bem.git"
+  },
+  "authors": [
+    "Tomohiro Kasuga <tk@internets.co.jp>"
+  ]
+}
