@@ -1,6 +1,6 @@
 # jade-de-bem
 
-> Mixins for the Rapid BEM Coding with Jade
+> Jade Mixins for the Rapid BEM Coding
 
 ## Usage
 
