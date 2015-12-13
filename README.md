@@ -4,13 +4,17 @@
 
 ## Usage
 
+1. Include the `jade-de-bem` mixin.
+2. Flow the className rules.
+3. That's it.
+
 ```jade
 include jade-de-bem
 
 +div(class="block --special")
-  +ul(class="__items div")
-    +li(class="__item --new div")
-      +a(class="__link span")
+  +ul(class="__items foo")
+    +li(class="__item --new foo bar")
+      +a(class="__link baz")
         | Foo
 ```
 
@@ -18,19 +22,19 @@ include jade-de-bem
 
 ```html
 <div class="block block--special">
-  <ul class="block__items div">
-    <li class="block__item block__item--new div">
-      <a class="block__link span">Foo
+  <ul class="block__items foo">
+    <li class="block__item block__item--new foo bar">
+      <a class="block__link baz">Foo
       </a>
     </li>
   </ul>
 </div>
 ```
 
-## Installation
+### Install
 
-- Download: [master.zip](https://github.com/internets-inc/jade-de-bem/archive/master.zip)
-- Via Bower: `$ bower install jade-de-bem`
+- Download [master.zip](https://github.com/internets-inc/jade-de-bem/archive/master.zip)
+- or `$ bower install jade-de-bem`
 
 ## Specification
 
