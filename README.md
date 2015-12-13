@@ -80,6 +80,15 @@ Yields:
 </div>
 ```
 
+### Separators Configuration
+
+https://github.com/internets-inc/jade-de-bem/blob/master/lib/bem.jade#L5-L6
+
+```jade
+config.element  = '__'
+config.modifier = '--'
+```
+
 ## License
 
 MIT
