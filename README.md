@@ -5,7 +5,7 @@
 ## Usage
 
 1. Include the `jade-de-bem` mixin.
-2. Flow the className rules.
+2. Follow the className rules. See [below](#specification).
 3. That's it.
 
 ```jade
