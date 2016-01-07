@@ -31,7 +31,7 @@ include jade-de-bem
 </div>
 ```
 
-### Install
+### Install jade-de-bem
 
 - Download [master.zip](https://github.com/internets-inc/jade-de-bem/archive/master.zip)
 - or `$ bower install jade-de-bem`
@@ -41,7 +41,7 @@ include jade-de-bem
 Start with `+` sign and keep the className order.
 
 ```jade
-+E(class="(block|__element) [--modifier] [else]")
++E(class="(block|__element|--modifier__element) [--modifier] [else]")
 ```
 
 ### Terminal Indicator

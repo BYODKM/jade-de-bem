@@ -1,6 +1,6 @@
 {
   "name": "jade-de-bem",
-  "description": "Mixins for the Rapid BEM Coding with Jade",
+  "description": "Jade Mixins for the Rapid BEM Coding",
   "main": [
     "jade-de-bem.jade",
     "lib/bem.jade",

@@ -1,6 +1,6 @@
 {
   "name": "jade-de-bem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "start": "npm run jade",

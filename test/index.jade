@@ -5,7 +5,13 @@ include ../jade-de-bem
   +main(class="__main")
     +div(class="block --special")
       +ul(class="__items div")
+        +li(class="__item div")
+          +a(class="__link span")
+            | foo
         +li(class="__item --new div")
+          +a(class="__link span")
+            | foo
+        +li(class="--special__item --new div")
           +a(class="__link span")
             | foo
     +bem(false)
