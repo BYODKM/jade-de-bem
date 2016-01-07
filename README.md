@@ -4,10 +4,6 @@
 
 ## Usage
 
-1. Include the `jade-de-bem` mixin.
-2. Follow the className rules. See [below](#specification).
-3. That's it.
-
 ```jade
 include jade-de-bem
 
@@ -17,6 +13,10 @@ include jade-de-bem
       +a(class="__link baz")
         | Foo
 ```
+
+1. Include the `jade-de-bem` mixin.
+2. Follow the class rules. See the [specification](#specification).
+3. That's it.
 
 ### Yields:
 
@@ -31,10 +31,10 @@ include jade-de-bem
 </div>
 ```
 
-### Install jade-de-bem
+## Install jade-de-bem
 
-- Download [master.zip](https://github.com/internets-inc/jade-de-bem/archive/master.zip)
-- or `$ bower install jade-de-bem`
+- `$ bower install jade-de-bem`
+- or download [master.zip](https://github.com/internets-inc/jade-de-bem/archive/master.zip)
 
 ## Specification
 
@@ -42,6 +42,15 @@ Start with `+` sign and keep the className order.
 
 ```jade
 +E(class="(block|__element|--modifier__element) [--modifier] [else]")
+```
+
+### Separators Configuration
+
+https://github.com/internets-inc/jade-de-bem/blob/master/lib/bem.jade#L5-L6
+
+```jade
+config.element  = '__'
+config.modifier = '--'
 ```
 
 ### Terminal Indicator
@@ -82,15 +91,6 @@ Yields:
   <footer class="parent__footer">
   </footer>
 </div>
-```
-
-### Separators Configuration
-
-https://github.com/internets-inc/jade-de-bem/blob/master/lib/bem.jade#L5-L6
-
-```jade
-config.element  = '__'
-config.modifier = '--'
 ```
 
 ## License
